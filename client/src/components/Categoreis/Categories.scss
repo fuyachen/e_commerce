@@ -1,0 +1,63 @@
+.categories {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "sale newSeason men accessories"
+    "women newSeason shoes shoes";
+  gap: 1rem;
+  margin-top: 100px;
+  .item {
+    position: relative;
+    overflow: hidden;
+    &:hover::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      transition: all 0.5s ease;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 40px;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      z-index: 2;
+    }
+  }
+  .sale {
+    grid-area: sale;
+  }
+  .newSeason {
+    grid-area: newSeason;
+  }
+  .men {
+    grid-area: men;
+  }
+  .accessories {
+    grid-area: accessories;
+  }
+  .women {
+    grid-area: women;
+  }
+  .shoes {
+    grid-area: shoes;
+  }
+}

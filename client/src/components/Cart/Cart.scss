@@ -1,0 +1,84 @@
+.cart {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 350px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 7px -5px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  cursor: default;
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    padding: 0;
+    .left {
+      display: flex;
+      gap: 20px;
+      img {
+        flex-shrink: 0;
+        width: 80px;
+        height: 100px;
+        object-fit: cover;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        .title {
+          font-size: 18px;
+          color: #555;
+          font-weight: 500;
+        }
+        .desc {
+          font-size: 14px;
+        }
+        .priceBox {
+          font-size: 16px;
+          .price {
+            color: #2c78ff;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .delete {
+      color: rgb(230, 100, 100);
+      cursor: pointer;
+    }
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #555;
+    font-weight: 600;
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .reset {
+      color: rgb(230, 100, 100);
+      cursor: pointer;
+    }
+    .checkout {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 200px;
+      padding: 8px;
+      border: none;
+      color: #fff;
+      background-color: #2978f9;
+      cursor: pointer;
+    }
+  }
+}

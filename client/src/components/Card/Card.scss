@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 220px;
+  margin-top: 20px;
+  .image {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    &:hover {
+      .secondImg {
+        z-index: 1;
+      }
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      object-fit: cover;
+    }
+    .new {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 100px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+      background-color: #fff;
+      color: #2879fe;
+      z-index: 2;
+    }
+  }
+
+  .title {
+    font-size: 15px;
+    // font-weight: normal;
+  }
+  .price {
+    font-size: 15px;
+    .oldPrice {
+      margin-right: 5px;
+      color: #777;
+      text-decoration: line-through;
+    }
+  }
+}

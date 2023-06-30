@@ -1,0 +1,22 @@
+.featuredProducts {
+  margin: 100px 100px 0;
+  overflow: hidden;
+  .top {
+    display: flex;
+    h1 {
+      flex: 1;
+      font-size: 25px;
+    }
+    p {
+      flex: 2;
+      text-align: justify;
+      color: #777;
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+}
